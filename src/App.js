@@ -8,20 +8,25 @@ import Layout from './Component/Layout';
 import Home from './Component/Home/Home';
 import Contact from './Component/Contact/Contact';
 import About from './Component/About/About';
+import Login from './Component/Login/Login';
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
+      <Route path='/' element={<Login/>}/>
           {/* by default show compponent */}
-        <Route path='/' element={<Layout/>}> 
-          <Route path='Home' element={<Home/>}/>
+         
+        <Route path='Layout' element={<Layout/>}> 
+          <Route  path='' index element={<Home/>}/>
           <Route path='Contact' element={<Contact/>}/>
           <Route path='About' element={<About/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
+    
+
 
   );
 }

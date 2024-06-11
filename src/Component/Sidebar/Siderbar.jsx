@@ -12,12 +12,15 @@ const Siderbar = () => {
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className='me-auto'>
           <Nav className="me-auto">
-            <Link  to="Home">Home</Link>
-            <Link to="About">About</Link>
-            <Link to="Contact">Contact</Link>
+            <Link  to="Home" className='px-2'>Home</Link>
+            <Link to="About" className='px-2'>About</Link>
+            <Link to="Contact" className='px-2'>Contact</Link>
           </Nav>
+          <button className='btn'>
+            <Link to="/">LogOut</Link>
+          </button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
