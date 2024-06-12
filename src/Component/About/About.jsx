@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const About = () => {
+const About = ({ counter }) => {
   return (
     <div>
-      About
+      <h1>Counter: {counter}</h1>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
