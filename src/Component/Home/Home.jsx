@@ -24,6 +24,10 @@ const Home = ({ counter, addValue, removeValue }) => {
           <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
+
+      <div className="container">
+        
+      </div>
     </div>
   );
 };
